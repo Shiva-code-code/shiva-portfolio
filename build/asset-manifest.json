@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7754b5fb.css",
+    "main.js": "/static/js/main.ad7d793e.js",
+    "static/js/787.7be75eeb.chunk.js": "/static/js/787.7be75eeb.chunk.js",
+    "static/media/problem_solving_basic certificate-1.png": "/static/media/problem_solving_basic certificate-1.6e94e8669c2d09a06619.png",
+    "static/media/python_basic certificate-1.png": "/static/media/python_basic certificate-1.b7dae23a4330912b0d0e.png",
+    "static/media/problem_solving_intermediate certificate-1.png": "/static/media/problem_solving_intermediate certificate-1.196208a1c4706560ddc7.png",
+    "static/media/teckFiesta.jpg": "/static/media/teckFiesta.8addfca29dab83201e95.jpg",
+    "static/media/Student-community.png": "/static/media/Student-community.77365efb4cb55912f179.png",
+    "static/media/lordslogo.png": "/static/media/lordslogo.89f7c02ffbdfd38e7cbf.png",
+    "static/media/1-b7dfbd2f-7c95-4a38-ba75-62f8b6c86e5e-1.png": "/static/media/1-b7dfbd2f-7c95-4a38-ba75-62f8b6c86e5e-1.fc313bd62f78b1a34e98.png",
+    "static/media/DB1.png": "/static/media/DB1.5eedd6168567b1aaa5c8.png",
+    "static/media/1-d67e95cb-85fe-4328-90a4-8ca1347c432e-1.png": "/static/media/1-d67e95cb-85fe-4328-90a4-8ca1347c432e-1.d88bf1d42aa1b4eeeb8b.png",
+    "static/media/1-305d3c01-d353-48ce-901b-da64a747bc6d-1.png": "/static/media/1-305d3c01-d353-48ce-901b-da64a747bc6d-1.20323ca62ceeef064a1c.png",
+    "static/media/profile.png": "/static/media/profile.4c53c09adb519fe96c29.png",
+    "static/media/markdownpreviewer.png": "/static/media/markdownpreviewer.c2d0d93130083b36f281.png",
+    "static/media/innowiz.jpg": "/static/media/innowiz.4724ab9588208365f24e.jpg",
+    "static/media/stmarys.png": "/static/media/stmarys.c3e556b2e4c163cc1730.png",
+    "static/media/InternalHackathon.jpg": "/static/media/InternalHackathon.3e627c6bca3ca7361ee8.jpg",
+    "static/media/IdeationDay.jpg": "/static/media/IdeationDay.78090b723421c5624347.jpg",
+    "static/media/whatsapp.webp": "/static/media/whatsapp.80fc5e78e1370c1af615.webp",
+    "static/media/instagram.png": "/static/media/instagram.75e0546a6b5abe4c0506.png",
+    "static/media/github.png": "/static/media/github.05f6c17b8cd04c28456f.png",
+    "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
+    "index.html": "/index.html",
+    "main.7754b5fb.css.map": "/static/css/main.7754b5fb.css.map",
+    "main.ad7d793e.js.map": "/static/js/main.ad7d793e.js.map",
+    "787.7be75eeb.chunk.js.map": "/static/js/787.7be75eeb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7754b5fb.css",
+    "static/js/main.ad7d793e.js"
+  ]
+}
