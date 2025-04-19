@@ -78,7 +78,7 @@ npm start
 
 - 📧 Email: shivakumarhazari0@gmail.com  
 - 📱 WhatsApp: [+91 6300655864](https://wa.me/+916300655864)  
-- 🌐 [LinkedIn](https://linkedin.com/in/shivakumarhazari)  
+- 🌐 [LinkedIn](https://linkedin.com/in/hazarishiva)  
 - 💻 [GitHub](https://github.com/shiva-code-code)
 
 ---
