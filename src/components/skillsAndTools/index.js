@@ -1,17 +1,25 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
+const SkillIcon = ({ name, icon }) => (
+  <div className="badge bg-light border shadow-sm d-flex align-items-center px-2 py-1 m-1">
+    {icon && (
+      <img
+        src={`https://skillicons.dev/icons?i=${icon}&theme=light`}
+        alt={name}
+        style={{ width: '20px', height: '20px', marginRight: '5px' }}
+      />
+    )}
+    <span>{name}</span>
+  </div>
+);
 
 class SkillsAndTools extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      showContainer: false,
-    };
+    this.state = { showContainer: false };
   }
 
   componentDidMount() {
-    // Trigger animation after component mount
     setTimeout(() => {
       this.setState({ showContainer: true });
     }, 100);
@@ -20,185 +28,77 @@ class SkillsAndTools extends React.Component {
   render() {
     const { showContainer } = this.state;
     return (
-      <div className={`container d-flex align-items-center justify-content-center mt-5 ${showContainer ? 'fade-in' : ''}`} id="skills">
-        <div className="row align-items-center justify-content-center m-1">
-          <h2>Skills And Tools</h2>
-          <div className="col-lg-6 border shadow p-4 rounded m-1">
-            <h2>Skills</h2>
-            <div className="row">
-            <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=html&theme=dark&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>HTML</span>
-                </div>
-                <div className="col-6 rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=css&theme=dark&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>CSS</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=bootstrap&theme=dark&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Bootstrap</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=javascript&theme=dark&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Javascript</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=spring&theme=dark"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Spring framework</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=maven&theme=dark"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Maven</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=docker&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Docker</span>
-                </div>
-                {/* <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=express&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Express</span>
-                </div> */}
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=nodejs&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Node</span>
-                </div>
-                {/* <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=django&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>DRF</span>
-                </div> */}
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=mongodb&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Mongo DB</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=postgres&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Postgres SQL</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=python&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Python</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=java&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Java</span>
-                </div>
+      <div className={`container mt-5 ${showContainer ? 'fade-in' : ''}`} id="skills">
+        <h2 className="text-center mb-4">Skills And Tools</h2>
+        <div className="row justify-content-center">
+          <div className="col-lg-5 border shadow p-4 rounded m-2">
+            <h4>💻 Frontend</h4>
+            <div className="d-flex flex-wrap">
+              <SkillIcon name="HTML" icon="html" />
+              <SkillIcon name="CSS" icon="css" />
+              <SkillIcon name="JavaScript" icon="javascript" />
+              <SkillIcon name="React.js" icon="react" />
+              <SkillIcon name="Bootstrap" icon="bootstrap" />
+            </div>
+
+            <h4 className="mt-4">⚙️ Backend</h4>
+            <div className="d-flex flex-wrap">
+              <SkillIcon name="Java" icon="java" />
+              <SkillIcon name="Spring Boot" icon="springboot" />
+              <SkillIcon name="Spring Security" icon="spring" />
+              <SkillIcon name="Hibernate" icon="hibernate" />
+              <SkillIcon name="REST APIs" icon="" />
+              <SkillIcon name="JPA" icon="" />
+              <SkillIcon name="Microservices" icon="" />
+              <SkillIcon name="Node.js" icon="nodejs" />
+            </div>
+
+            <h4 className="mt-4">🛢️ Databases</h4>
+            <div className="d-flex flex-wrap">
+              <SkillIcon name="MySQL" icon="mysql" />
+              <SkillIcon name="MongoDB" icon="mongodb" />
+              <SkillIcon name="PostgreSQL" icon="postgres" />
+            </div>
+
+            <h4 className="mt-4">☁️ Cloud & DevOps</h4>
+            <div className="d-flex flex-wrap">
+              <SkillIcon name="AWS (EC2, S3)" icon="aws" />
+              <SkillIcon name="Vercel" icon="vercel" />
+              <SkillIcon name="Netlify" icon="netlify" />
+              <SkillIcon name="Ngrok" icon="" />
+              <SkillIcon name="Docker" icon="docker" />
+              <SkillIcon name="Kubernetes" icon="kubernetes" />
+              <SkillIcon name="Maven" icon="maven" />
+              <SkillIcon name="Gradle" icon="gradle" />
+              <SkillIcon name="Git" icon="git" />
+            </div>
+
+            <h4 className="mt-4">🧪 Testing</h4>
+            <div className="d-flex flex-wrap">
+              <SkillIcon name="JUnit" icon="" />
+              <SkillIcon name="Mockito" icon="" />
+              <SkillIcon name="RestAssured" icon="" />
+            </div>
+
+            <h4 className="mt-4">📚 CS Fundamentals</h4>
+            <div className="d-flex flex-wrap">
+              <SkillIcon name="OS" icon="" />
+              <SkillIcon name="OOP" icon="" />
+              <SkillIcon name="DBMS" icon="" />
+              <SkillIcon name="CN" icon="" />
+              <SkillIcon name="DSA" icon="" />
             </div>
           </div>
-          <div className="col-lg-4 border rounded shadow p-4 m-1">
-            <h2>Tools</h2>
-            <div className="row">
-            <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=vscode&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>VS Code</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=powershell&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Powershell</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=bash&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Bash</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=git&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Git</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=github&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>GitHub</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=eclipse&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Eclipse</span>
-                </div>
-                <div className="col rounded border shadow d-flex align-items-center m-2 p-2">
-                  <img
-                    src="https://skillicons.dev/icons?i=postman&theme=light&"
-                    alt="html"
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }}
-                  />
-                  <span>Postman</span>
-                </div>
+
+          <div className="col-lg-3 border shadow p-4 rounded m-2">
+            <h4>🛠️ Tools</h4>
+            <div className="d-flex flex-wrap">
+              <SkillIcon name="VS Code" icon="vscode" />
+              <SkillIcon name="PowerShell" icon="powershell" />
+              <SkillIcon name="Bash" icon="bash" />
+              <SkillIcon name="GitHub" icon="github" />
+              <SkillIcon name="Eclipse" icon="eclipse" />
+              <SkillIcon name="Postman" icon="postman" />
             </div>
           </div>
         </div>
