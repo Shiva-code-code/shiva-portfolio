@@ -56,7 +56,7 @@ class Home extends React.Component {
               <div className='my-4'>
                 <a href='https://wa.me/+916300655864' target='_blank'><img className='img img-fluid m-2 mt-1 animate__animated animate__bounce' src={whatsapp} alt="whatsapp" style={{ width: "38px", height: "38px" }} /></a>
                 <a href='https://github.com/shiva-code-code' target='_blank'><img className='img img-fluid m-2 mt-1 animate__animated animate__bounce' src={github} alt="github" style={{ width: "30px", height: "30px" }} /></a>
-                <a href='https://www.linkedin.com/in/shivakumarhazari' target='_blank'><img className='img img-fluid m-2 mt-1 animate__animated animate__bounce' src={linkedin} alt="linkedin" style={{ width: "30px", height: "30px" }} /></a>
+                <a href='https://www.linkedin.com/in/hazarishiva' target='_blank'><img className='img img-fluid m-2 mt-1 animate__animated animate__bounce' src={linkedin} alt="linkedin" style={{ width: "30px", height: "30px" }} /></a>
                 <a href='https://www.instagram.com/shivahaz' target='_blank'><img className='img img-fluid m-2 mt-1 animate__animated animate__bounce' src={instagram} alt="insta" style={{ width: "30px", height: "30px" }} /></a>
                 <a href='https://www.facebook.com/' target='_blank'><img className='img img-fluid m-2 mt-1 animate__animated animate__bounce' src={facebook} alt="facebook" style={{ width: "30px", height: "30px" }} /></a>
                 <a href='mailto:hshiva7661016@gmail.com' target='_blank'><img className='img img-fluid m-2 mt-1 animate__animated animate__bounce' src={gmail} alt="gmail" style={{ width: "36px", height: "30px" }} /></a>
