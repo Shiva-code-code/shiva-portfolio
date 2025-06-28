@@ -6,6 +6,7 @@ import backend from '../../images/certificates/images/info/db/DB2/1-b7dfbd2f-7c9
 import database from '../../images/certificates/images/info/db/DB1/DB1.png'
 import python from '../../images/certificates/images/info/java/1-d67e95cb-85fe-4328-90a4-8ca1347c432e-1.png'
 import java from '../../images/certificates/images/info/db/No/1-305d3c01-d353-48ce-901b-da64a747bc6d-1.png'
+import spring from '../../images/certificates/images/info/spring/Spring.jpg'
 class Certificates extends React.Component{
     constructor(props){
         super(props);
@@ -52,6 +53,10 @@ class Certificates extends React.Component{
                     <div className="col-lg-4 m-1 p-3 shadow rounded border">
                         <a href={java} target='__blank'><img src={java} alt="certificate" className=' border img-fluid w-100 shadow'/></a>
                         <a href="https://drive.google.com/file/d/1gP76A3Rhxu4CoMw51iUci3RX0ybFcuNA/view?usp=sharing" target='_blank'><h4 className='mt-1 mb-0'>No SQL</h4></a>
+                    </div>
+                    <div className="col-lg-4 m-1 p-3 shadow rounded border">
+                        <a href={java} target='__blank'><img src={spring} alt="certificate" className=' border img-fluid w-100 shadow'/></a>
+                        <a href="https://drive.google.com/file/d/1DXaJXlLvsTHsz0_bQbGY3t7dxDwsxyC5/view?usp=sharing" target='_blank'><h4 className='mt-1 mb-0'>Complete SpringBoot with Cloud</h4></a>
                     </div>
                 </div>
             </div>
